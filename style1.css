@@ -1,0 +1,58 @@
+*{ margin: 0;
+padding: 0;
+}
+header{
+    margin: auto 0;
+    height: 300px;
+    justify-content: space-between;
+   
+}
+.menu{    
+    width: 100%; /* Ширина основного блока меню */
+	height: 50px; /* Высота основного блока меню */
+	position: relative;
+	display: table;
+	margin: 0;
+	padding: 0;   
+}
+.menu ul{
+list-style: none;
+}
+.menu > ul > li{  /*c помощью > мы обращаемся к пунтам списка*/
+    float: left;
+    width: 180px;
+    position: relative;    
+}
+.menu li a{
+    display: block;
+    background: black;
+    border: 1px solid white;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+.menu li a:hover{          /*при наведении */
+    background: rgb(48, 47, 47); /*цвет самого блока*/
+    color: white;        /* цвет шрифта*/
+    transition: all 0.3s ease;       /*плавное появление*/
+}
+        
+.menu li .dropmenu{
+    display: none;
+    position: absolute;
+    top: 100%
+}
+.menu li:hover .dropmenu{
+    display: block;
+}
+.menu li li{
+    width: 180px;
+}
+.logo{
+    line-height: 25px;
+    float: left;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+}
